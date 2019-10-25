@@ -2,4 +2,4 @@
 
 if __name__ == '__main__':
     n = int(input())
-    print(*range(1,n+1), sep = '')
+    print(*range(1,n+1), sep = '') # Unpack elements in list or tuple to function arguments using *
