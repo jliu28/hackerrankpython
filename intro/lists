@@ -1,0 +1,21 @@
+#Lists
+
+if __name__ == '__main__':
+    N = int(input())
+    aList = []
+    for _ in range(N):
+        op = input().split()
+        if op[0] == 'insert':
+            aList.insert(int(op[1]),int(op[2]))
+        elif op[0] == 'remove':
+            aList.remove(int(op[1]))
+        elif op[0] == 'append':
+            aList.append(int(op[1]))
+        elif op[0] == 'pop':
+            aList.pop()
+        elif op[0] == 'print':
+            print(aList)
+        elif op[0] == 'reverse':
+            aList.reverse()
+        elif op[0] == 'sort':
+            aList.sort()
