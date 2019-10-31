@@ -1,0 +1,17 @@
+# String Validators
+
+if __name__ == '__main__':
+    s = input()
+    alnum, alpha, digit, lower, upper = False, False, False, False, False
+    for i in list(s):
+        if i.isalnum() == True:
+            alnum = True
+        if i.isalpha() == True:
+            alpha = True
+        if i.isdigit() == True:
+            digit = True
+        if i.islower() == True:
+            lower = True
+        if i.isupper() == True:
+            upper = True
+    print (alnum, alpha, digit, lower, upper, sep ='\n')
